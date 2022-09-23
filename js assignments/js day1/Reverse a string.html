@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>JavaScript to print Odd Numbers within a Range!</title>
+    Enter a string: <input id = "str">  
+<br><br>  
+<button onclick = "reverseString(str)"> Factorial </button>  
+<p id = "res"></p>  
+    <script>
+     
+     function reverseString(str) {
+        var str
+  let result = '';
+  str = document.getElementById("str").value;  
+
+  for (let i = str.length - 1; i >= 0; i--) {
+    result += str[i];
+  }
+
+ 
+  document.getElementById("res").innerHTML = result
+}
+      
+    </script>
+  </head>
+  
+</html>

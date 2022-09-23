@@ -1,0 +1,23 @@
+<html>
+   <head>
+     
+   
+   Enter a string: <input id = "str"> 
+   <br><br>
+   <button onclick = "lengthofString()"> CLICK </button>
+   <p id = res></p> 
+</head>
+   <body>   
+      <script type = "text/javascript">
+        function lengthofString(){
+            var str
+ 
+         str = document.getElementById("str").value; 
+         result = "STRING LENGTH IS:" + str.length 
+        document.getElementById("res").innerHTML = result
+
+        }
+      
+      </script>      
+   </body>
+</html>

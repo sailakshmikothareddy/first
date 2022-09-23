@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <p>The scope of a let variable is only block scoped. It can’t be accessible outside the particular block</p>
+    </head>
+    <body>
+        <script>
+           
+	let a = 10;
+	function f() {
+		let b = 9
+		document.writeln(b + "<br>" + "<br>");
+		document.writeln(a + "<br>" + "<br>");
+	}
+	f();
+
+
+        </script>
+        
+    </body>
+</html>

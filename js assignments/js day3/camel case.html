@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Javascript camel case</title>
+<h2> Camel case of a String</h2>
+</head>
+<body>
+    <script>
+        camelize = function camelize(str) {
+      return str.replace(/\W+(.)/g, function(match, chr)
+       {
+            return chr.toUpperCase();
+        });
+    }
+
+document.writeln(camelize("camel case of string")+ "<br>");
+document.writeln(camelize("java script assignments")+ "<br>");
+
+
+    </script>
+</body>
+</html>

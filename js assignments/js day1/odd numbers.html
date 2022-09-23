@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script>
+            function printFactNums(){
+                number = document.getElementById("number").value;
+if(number % 2 == 0) {
+
+    document.getElementById("result").innerHTML = "number is even";
+}
+
+// if the number is odd
+else {
+    document.getElementById("result").innerHTML = "number is odd";
+}
+            }
+    </script>
+    </head>
+    <body>
+        <h3>Given number is odd or even</h3>
+    Number: <input id="number" />
+    <button onclick="printFactNums()">fact num</button>
+    <div id="result"></div>
+    </body>
+</html>

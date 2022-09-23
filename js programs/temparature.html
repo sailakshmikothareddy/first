@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+</head>
+<body>
+    <script>
+        function ctof(celsius)
+        {
+          var ctemp = celsius;
+          var ctofar = ctemp * 9 / 5 + 32;
+          var message = ctemp + " is " + ctofar;
+          console.log(message);
+         // document.getElementById("cel").innerHTML = ctof(60);
+        }
+
+        function ftoc(fahrenheit)
+        {
+            var ftemp = fahrenheit;
+            var ftocel = (ftemp - 32) * 5 / 9;
+            var message = ftemp + " is " + ftocel;
+            console.log(message);
+           // document.getElementById("far").innerHTML = ftoc(45);
+        }
+
+        ctof(60);
+        ftoc(45);
+    </script>
+</body>
+</html>

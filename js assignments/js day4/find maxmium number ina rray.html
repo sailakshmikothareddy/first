@@ -1,0 +1,17 @@
+<html>
+<body>
+
+<h2>Maximum number in array</h2>
+<p>The highest number is <span id="demo"></span>.</p>
+
+<script>
+const points = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo").innerHTML = myArrayMax(points);
+
+function myArrayMax(arr) {
+  return Math.max.apply(null, arr);
+}
+</script>
+
+</body>
+</html>

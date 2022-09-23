@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <h2>Recursive Function</h2>
+    </head>
+    <body>
+        <script>
+        function countDown(number) {
+
+// display the number
+    document.writeln(number + "<br>" + "<br>");
+
+
+// decrease the number value
+const newNumber = number - 1;
+
+// base case
+if (newNumber > 0) {
+    countDown(newNumber);
+    
+}
+}
+
+countDown(4);
+
+        </script>
+    </body>
+</html>

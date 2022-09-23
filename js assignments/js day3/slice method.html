@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript String Properties</h2>
+
+<p>The length property returns the length of a string:</p>
+Enter a string: <input id="str"><br>
+
+<button id="demo" onclick="substr()">Substr</button>
+<div id="a"></div>
+<button id="demo" onclick="slice()">Slice</button>
+<div id="b"></div>
+<button id="demo" onclick="substring()">Substring</button>
+<div id="c"></div>
+<button id="demo" onclick="length()">Length</button>
+<div id="d"></div>
+<button id="demo" onclick="uppercase()">uppercase</button>
+<div id="e"></div>
+<button id="demo" onclick="lowercase()">lowercase</button>
+<div id="f"></div>
+<button id="demo" onclick="charAt()">charAt</button>
+<div id="g"></div>
+<button id="demo" onclick="charCodeAt()">charCodeAt</button>
+<div id="h"></div>
+
+
+
+
+
+
+<script>
+    function substr(){
+        var text;
+
+        str = document.getElementById("str").value;
+        result = str.substr(2, 4);
+        document.getElementById("a").innerHTML = result;
+    }
+//let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+function slice(){
+        var text;
+
+        str = document.getElementById("str").value;
+        result = str.slice(3, 7);
+        document.getElementById("b").innerHTML = result;
+    }
+
+    function substring(){
+        var text;
+
+        str = document.getElementById("str").value;
+        result = str.substring(2, 6);
+        document.getElementById("c").innerHTML = result;
+    }
+
+    function length(){
+        var text;
+
+        str = document.getElementById("str").value;
+        result = str.length;
+        document.getElementById("d").innerHTML = result;
+    }
+    function uppercase(){
+        var text;
+
+        str = document.getElementById("str").value;
+        result = str.toUpperCase();
+        document.getElementById("e").innerHTML = result;
+    }
+
+    function lowercase(){
+        var text;
+
+        str = document.getElementById("str").value;
+        result = str.toLowerCase();
+        document.getElementById("f").innerHTML = result;
+    }
+
+    function charAt(){
+        var text;
+
+        str = document.getElementById("str").value;
+        result = str.charAt();
+        document.getElementById("g").innerHTML = result;
+    }
+
+    function charCodeAt(){
+        var text;
+
+        str = document.getElementById("str").value;
+        result = str.charCodeAt();
+        document.getElementById("h").innerHTML = result;
+    }
+
+
+</script>
+
+</body>
+</html>
+

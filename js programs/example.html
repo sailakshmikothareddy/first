@@ -1,0 +1,27 @@
+<html>
+<body>
+     <h2> PLEASE ENTER A NUMBER BETWWEN 5 AND 10</h2>
+     <input id = "demo",type = "text">
+     <button type ="button" , onclick="myfunction()">test input</button>
+     <p id = "p01"></p>
+     <script>
+         function myfunction(){
+             const message = document.getElementById("p01")
+             message.innerHTML=""
+             let x = document.getElementById("demo").value;
+             try{
+                 if(x== "") throw "empty";
+                 if(isNaN(x)) throw "not a number";
+                 x = Number(x);
+                 if(x<5) throw "too low";
+                 if(x>5) throw "too high";
+             }
+             catch (err) {
+                 message.innerHTML = "input is" + err;
+             }
+            
+         }
+     </script>
+</body>
+
+</html>

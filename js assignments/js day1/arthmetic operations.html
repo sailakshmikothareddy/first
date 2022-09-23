@@ -1,0 +1,49 @@
+<html>
+<head>
+<script>
+function add()
+{
+  var numOne, numTwo, sum;
+  numOne = parseInt(document.getElementById("first").value);
+  numTwo = parseInt(document.getElementById("second").value);
+  sum = numOne + numTwo;
+  document.getElementById("answer").value = sum;
+}
+function sub()
+{
+  var numOne, numTwo, sum;
+  numOne = parseInt(document.getElementById("first").value);
+  numTwo = parseInt(document.getElementById("second").value);
+  sub = numOne - numTwo;
+  document.getElementById("answer").value = sub;
+}
+function mul()
+{
+  var numOne, numTwo, sum;
+  numOne = parseInt(document.getElementById("first").value);
+  numTwo = parseInt(document.getElementById("second").value);
+  mul = numOne * numTwo;
+  document.getElementById("answer").value = mul;
+}
+function dev()
+{
+  var numOne, numTwo, sum;
+  numOne = parseInt(document.getElementById("first").value);
+  numTwo = parseInt(document.getElementById("second").value);
+  dev = numOne / numTwo;
+  document.getElementById("answer").value = dev;
+}
+</script>
+</head>
+<body>
+
+<p>Enter the First Number: <input id="first"></p>
+<p>Enter the Second Number: <input id="second"></p>
+<button onclick="add()">Add</button>
+<button onclick="sub()">substract</button>
+<button onclick="mul()">multiply</button>
+<button onclick="dev()">devide</button>
+<p>total = <input id="answer"></p>
+
+</body>
+</html>
